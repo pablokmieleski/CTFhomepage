@@ -1,0 +1,34 @@
+body {
+	background: grey;
+}
+
+.diaryHeader {
+	color: tomato;
+}
+
+.sectionHeader {
+	color: tomato;
+}
+
+.heading {
+	color: greenyellow;
+}
+
+.dayHeader {
+	color: yellow;
+}
+
+.paragraph {
+	color: blue;
+}
+
+.paragraphFooter {
+	color: pink;
+}
+
+.photo {
+	max-height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
