@@ -2,6 +2,13 @@ body {
 	background: grey;
 }
 
+.main {
+	width: 100%;
+	max-width: 900px;
+	margin: 32px auto;
+	padding-top: 50px;
+}
+
 .diaryHeader {
 	color: tomato;
 }
