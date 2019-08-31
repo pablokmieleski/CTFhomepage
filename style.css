@@ -6,34 +6,34 @@ body {
 	width: 100%;
 	max-width: 900px;
 	margin: 32px auto;
-	padding-top: 50px;
+	padding-top: 32px;
 }
 
-.diaryHeader {
+.title__diaryHeader {
 	color: tomato;
 }
 
-.sectionHeader {
+.about__sectionHeader {
 	color: tomato;
 }
 
-.heading {
+.main__header--heading {
 	color: greenyellow;
 }
 
-.dayHeader {
+.day__dayHeader {
 	color: yellow;
 }
 
-.paragraph {
+.day__paragraph {
 	color: blue;
 }
 
-.paragraphFooter {
+.footer__paragraphFooter {
 	color: pink;
 }
 
-.photo {
+.about__photo {
 	max-height: 300px;
 	margin-left: auto;
 	margin-right: auto;
