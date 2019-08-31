@@ -2,23 +2,19 @@ body {
 	background: grey;
 }
 
-.main {
-	width: 100%;
-	max-width: 900px;
-	margin: 32px auto;
-	padding-top: 32px;
-}
-
-.title__diaryHeader {
-	color: tomato;
+.about__photo {
+	max-height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 }
 
 .about__sectionHeader {
 	color: tomato;
 }
 
-.main__header--heading {
-	color: greenyellow;
+.day {
+	padding-left: 32px;
 }
 
 .day__dayHeader {
@@ -33,9 +29,17 @@ body {
 	color: pink;
 }
 
-.about__photo {
-	max-height: 300px;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
+.main {
+	width: 100%;
+	max-width: 900px;
+	margin: 32px auto;
+	padding-top: 32px;
+}
+
+.main__header--heading {
+	color: greenyellow;
+}
+
+.title__diaryHeader {
+	color: tomato;
 }
