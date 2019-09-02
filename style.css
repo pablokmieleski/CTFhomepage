@@ -1,5 +1,17 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
 body {
 	background: grey;
+}
+
+.about__paragraph {
+	color: blue;
 }
 
 .about__photo {
@@ -25,6 +37,17 @@ body {
 	color: blue;
 }
 
+.data-table {
+	width: 100%;
+}
+
+.hobby {}
+
+.hobby__list {
+	list-style: none;
+	padding: 0;
+}
+
 .footer__paragraphFooter {
 	color: pink;
 }
@@ -40,6 +63,28 @@ body {
 	color: greenyellow;
 }
 
+.navigation {}
+
+.navigation__list {
+	list-style: none;
+	padding: 0;
+	display: inline;
+}
+
+.navigation__item {
+	display: inline;
+}
+
 .title__diaryHeader {
 	color: tomato;
+}
+
+.site-header {
+	background: yellowgreen;
+	box-sizing: border-box;
+	left: 0;
+	padding: 10px;
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
