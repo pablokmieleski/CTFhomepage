@@ -103,7 +103,12 @@ console.log(calculateFatter(545));
 
 
 const imieNazw = (name2, age2) => {
-    console.log (`Cześć ${name2}, Twoj wiek to ${age2}!`)
+    console.log(`Cześć ${name2}, Twoj wiek to ${age2}!`)
 }
-    
+
 imieNazw('Pablo', 33)
+
+const nameNEW = 'PAwello'
+const ageNEW = '333'
+
+imieNazw(nameNEW, ageNEW);
