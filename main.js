@@ -34,7 +34,7 @@ ble.innerHTML = 'siemanko';
 
 if (age < 20) {
     console.log('masz mniej niz 20 lat');
-} else if ((age >= 20) && (age <=30)) {
+} else if ((age >= 20) && (age <= 30)) {
     console.log('masz wiecej niz 20 ale mniej niz 30 lat');
 } else {
     console.log('jestes 31+');
@@ -43,18 +43,18 @@ if (age < 20) {
 switch (age) {
     case 20:
         console.log('masz 20 lat')
-    break;
-    case 30 :
+        break;
+    case 30:
         console.log('masz 30 lat')
-    break;
-    default :
+        break;
+    default:
         console.log(`masz rowno ${age} lat`)
-    break;
+        break;
 }
 
 
 const amIOLD = (age > 70) ? 'yes' : 'no';
-    console.log(amIOLD);
+console.log(amIOLD);
 
 
 let oldIncdicator;
@@ -80,22 +80,30 @@ if (age > 70) {
 function calculate(x) {
     x = x + 3;
     console.log(x);
-    return x*7;
+    return x * 7;
 }
 
-    calculate(3);
+calculate(3);
 
-    console.log(calculate(2));
-    const myCalculation = calculate(4);
-    console.log(myCalculation);
+console.log(calculate(2));
+const myCalculation = calculate(4);
+console.log(myCalculation);
 
-    const calculateFat = (x) => {
-        x = x + 3;
-        console.log(`fat: ${x}`);
-        return x*7;
-    }    	
-    console.log(calculateFat(48));
+const calculateFat = (x) => {
+    x = x + 3;
+    console.log(`fat: ${x}`);
+    return x * 7;
+}
+console.log(calculateFat(48));
 
-    const calculateFatter = x => (x+3)*7;    	
-    console.log(calculateFatter(545));
+const calculateFatter = x => (x + 3) * 7;
+console.log(calculateFatter(545));
 
+
+
+
+const imieNazw = (name2, age2) => {
+    console.log (`Cześć ${name2}, Twoj wiek to ${age2}!`)
+}
+    
+imieNazw('Pablo', 33)
