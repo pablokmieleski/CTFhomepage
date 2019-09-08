@@ -92,3 +92,31 @@ body {
 	top: 0;
 	width: 100%;
 }
+
+@media print {
+	body {
+		background: yellow;
+	}
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 16px;
+	grid-row-gap: 16px;
+}
+
+@media screen and (min-width: 640px) and (max-width: 1000px) {
+	.grid {
+		grid-template-columns: 1fr;
+	}
+	.day__paragraph {
+		color: hotpink;
+	}
+}
+
+@media (min-width: 1200px) {
+	.main {
+		max-width: 1000px;
+	}
+}
