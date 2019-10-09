@@ -91,6 +91,12 @@ body {
 	position: fixed;
 	top: 0;
 	width: 100%;
+	z-index: 10;
+	min-height: 48px;
+}
+
+.main__header--heading__red {
+	color: darkred;
 }
 
 @media print {
@@ -119,4 +125,32 @@ body {
 	.main {
 		max-width: 1000px;
 	}
+}
+
+@media (max-width: 800px) {
+	.navigation__list {
+		flex-direction: column;
+		display: none;
+	}
+	.navigation__item {
+		margin: 16px;
+	}
+	.navigation__list--visible {
+		display: flex;
+	}
+}
+
+@media (min-width: 801px) {
+	.navigation__switcher {
+		display: none;
+	}
+}
+
+.navigation__switcher {
+border: none;
+background: none;
+position: absolute;
+right: 16px;
+top: 16px;
+
 }

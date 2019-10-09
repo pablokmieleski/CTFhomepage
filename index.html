@@ -13,7 +13,7 @@
 <body>
 	<header class="site-header">
 		<nav class="navigation">
-			<ul class="navigation__list">
+			<ul class="navigation__list navigation__list--js">
 				<li class="navigation__item"><a class="navigation__link" href="index.html">Strona glówna</a></li>
 				<li class="navigation__item"><a class="navigation__link"
 						href="tydzien/poniedzialeczek.html">Poniedzialeczek</a></li>
@@ -27,12 +27,17 @@
 				</li>
 			</ul>
 		</nav>
+		<button class="navigation__switcher navigation__switcher--js">≡</button>
 	</header>
+	<button class="navigation__switcher">≡</button>
 	<main class="main">
 		<header class="main__header">
-			<h1 class="main__header--heading">
+			<h1 class="main__header--heading main__header--js">
 				Paweł Chmielewski - strona domowa
 			</h1>
+			<button class="header__button header__button--js">
+				zmień treść nagłówka
+			</button>
 		</header>
 
 		<section class="about">

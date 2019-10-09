@@ -16,6 +16,52 @@ console.log(paragraphs);
 console.log(paragraphs[0]);
 
 
+
+const button = document.querySelector('.header__button--js')
+
+console.log(button);
+
+function handleClick() {
+    console.log('halo');
+}
+
+button.addEventListener('click', handleClick)
+
+
+
+button.addEventListener('click', () => {
+    console.log('hallo arrow function');
+})
+
+button.addEventListener('click', (e) => {
+    console.log(e);
+    console.log('hallo arrow event');
+})
+
+button.addEventListener('click', (e) => {
+    const header = document.querySelector('.main__header--js')
+    header.innerHTML = 'klik, klik';
+    header.classList.toggle('main__header--heading__red');
+    /* alert('hello'); */
+    if (header.classList.contains('main__header--heading__red')) {
+        console.log('jest klasa')
+    } else {
+        console.log('klasy brak')
+    }
+
+})
+
+
+
+const navigationSwitcher = document.querySelector('.navigation__switcher--js');
+
+navigationSwitcher.addEventListener('click', (e) => {
+    const navigationList = document.querySelector('.navigation__list--js');
+    navigationList.classList.toggle('navigation__list--visible');
+});
+
+
+
 const js = document.querySelector('.block__element--js');
 console.log(js);
 
@@ -28,9 +74,9 @@ console.log(js.innerHTML);
 js.innerHTML = '<h1>POZDRO JS<h1>';
 
 
-const ble = document.querySelector('.main__header--heading');
+/* const ble = document.querySelector('.main__header--heading'); 
 
-ble.innerHTML = 'siemanko';
+ble.innerHTML = 'siemanko'; */
 
 if (age < 20) {
     console.log('masz mniej niz 20 lat');
@@ -112,3 +158,5 @@ const nameNEW = 'PAwello'
 const ageNEW = '333'
 
 imieNazw(nameNEW, ageNEW);
+
+
