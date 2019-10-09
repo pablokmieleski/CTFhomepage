@@ -54,18 +54,25 @@ button.addEventListener('click', (e) => {
 
 
 const navigationSwitcher = document.querySelector('.navigation__switcher--js');
+const navigationX = document.querySelector('.navigation__list--js');
 
 navigationSwitcher.addEventListener('click', (e) => {
     const navigationList = document.querySelector('.navigation__list--js');
     navigationList.classList.toggle('navigation__list--visible');
+    if (navigationX.classList.contains('navigation__list--visible')) {
+        navigationSwitcher.innerHTML = 'X';
+    } else {
+        navigationSwitcher.innerHTML = '≡';
+    }
 });
+
+
+
 
 
 
 const js = document.querySelector('.block__element--js');
 console.log(js);
-
-
 
 
 console.log(js.innerHTML);
