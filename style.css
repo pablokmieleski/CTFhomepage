@@ -143,6 +143,10 @@ body {
 	grid-row-gap: 16px;
 }
 
+.site-header:hover {
+	background: lightcoral;
+}
+
 @media screen and (min-width: 640px) and (max-width: 1000px) {
 	.grid {
 		grid-template-columns: 1fr;
