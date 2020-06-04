@@ -187,3 +187,6 @@ function funkcja3(imie3, wiek3) {
 }
 
 funkcja3('roman', 18);
+
+
+
