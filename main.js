@@ -4,6 +4,8 @@ console.log(name);
 console.log(`nazywam sie ${name} i mam ${age} lat`);
 
 
+
+
 const about = document.querySelector('.about');
 console.log(about);
 
@@ -67,6 +69,12 @@ navigationSwitcher.addEventListener('click', (e) => {
 });
 
 
+function contentUpdater(querySelectorContent, content2) {
+    const element = document.querySelector (querySelectorContent);
+    element.innerHTML = content2;
+};
+
+contentUpdater('.witcher--js', ' la la ')
 
 
 
@@ -167,3 +175,15 @@ const ageNEW = '333'
 imieNazw(nameNEW, ageNEW);
 
 
+
+const imieWiek = (name, age) => {
+    console.log(`funkcja strzalkowa ${name} i mam ${age} lat`);
+}
+
+imieWiek('Pablo', 300);
+
+function funkcja3(imie3, wiek3) {
+    console.log(`funkcja zwykla ${imie3} i mam ${wiek3} lat`);
+}
+
+funkcja3('roman', 18);
