@@ -18,16 +18,16 @@ console.log(paragraphs);
 console.log(paragraphs[0]);
 
 
-
+/*
 const button = document.querySelector('.header__button--js')
 
 console.log(button);
 
-function handleClick() {
-    console.log('halo');
+function myClick() {
+    console.log('kliknąłeś');
 }
 
-button.addEventListener('click', handleClick)
+button.addEventListener('click', myClick);
 
 
 
@@ -44,14 +44,26 @@ button.addEventListener('click', (e) => {
     const header = document.querySelector('.main__header--js')
     header.innerHTML = 'klik, klik';
     header.classList.toggle('main__header--heading__red');
-    /* alert('hello'); */
+     alert('hello'); 
     if (header.classList.contains('main__header--heading__red')) {
         console.log('jest klasa')
     } else {
         console.log('klasy brak')
     }
 
-})
+})*/
+
+const button = document.querySelector('.action--js');
+
+console.log(button)
+
+const myClick = () => {
+    console.log('kliknałeś')
+}
+
+button.addEventListener('click', myClick);
+
+
 
 
 
