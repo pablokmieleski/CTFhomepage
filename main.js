@@ -60,6 +60,8 @@ console.log(button)
 button.addEventListener('mouseenter', () => {
    const heading = document.querySelector('.main__header--js')
    heading.innerHTML =`hejka`;
+   heading.classList.toggle('klasa-z-js')
+   heading.classList.remove('main__header--heading')
 });
 
 
