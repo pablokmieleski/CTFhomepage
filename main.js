@@ -57,13 +57,16 @@ const button = document.querySelector('.action--js');
 
 console.log(button)
 
-const myClick = () => {
-    console.log('kliknałeś')
-}
+button.addEventListener('mouseenter', () => {
+   const heading = document.querySelector('.main__header--js')
+   heading.innerHTML =`hejka`;
+});
 
-button.addEventListener('click', myClick);
 
-
+button.addEventListener('click', (e) => {
+    console.log(e);
+    console.log(e.target);
+});
 
 
 
