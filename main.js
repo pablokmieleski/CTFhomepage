@@ -72,16 +72,16 @@ button.addEventListener('click', (e) => {
 
 
 
-const navigationSwitcher = document.querySelector('.navigation__switcher--js');
+const hamburger = document.querySelector('.hamburger--js');
 const navigationX = document.querySelector('.navigation__list--js');
 
-navigationSwitcher.addEventListener('click', (e) => {
+hamburger.addEventListener('click', (e) => {
     const navigationList = document.querySelector('.navigation__list--js');
     navigationList.classList.toggle('navigation__list--visible');
     if (navigationX.classList.contains('navigation__list--visible')) {
-        navigationSwitcher.innerHTML = 'X';
+        hamburger.innerHTML = 'X';
     } else {
-        navigationSwitcher.innerHTML = '≡';
+        hamburger.innerHTML = '≡';
     }
 });
 

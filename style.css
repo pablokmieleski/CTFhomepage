@@ -24,6 +24,7 @@ body {
 }
 
 .about__photo {
+	max-width: 100%;
 	max-height: 300px;
 	margin-left: auto;
 	margin-right: auto;
@@ -195,15 +196,16 @@ body {
 }
 
 @media (min-width: 801px) {
-	.navigation__switcher {
+	.hamburger {
 		display: none;
 	}
 }
 
-.navigation__switcher {
+.hamburger {
 	border: none;
 	background: none;
 	position: absolute;
 	right: 16px;
 	top: 16px;
+	font-size: 22px;;
 }
