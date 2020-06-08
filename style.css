@@ -94,6 +94,13 @@ body {
 	color: pink;
 }
 
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 16px;
+	grid-row-gap: 16px;
+}
+
 .klasa-z-js {
 	background-color: #FF2525;
 	color: white;
@@ -156,12 +163,7 @@ body {
 	}
 }
 
-.grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-column-gap: 16px;
-	grid-row-gap: 16px;
-}
+
 
 .site-header:hover {
 	background: lightcoral;
@@ -192,6 +194,9 @@ body {
 	}
 	.navigation__list--visible {
 		display: flex;
+	}
+	.grid {
+		grid-template-columns: 1fr 1fr;
 	}
 }
 
