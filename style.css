@@ -2,13 +2,15 @@ html {
 	box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
 	box-sizing: inherit;
 }
 
 body {
-	background-color: #08AEEA;
-	background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+	background-color: #08aeea;
+	background-image: linear-gradient(0deg, #08aeea 0%, #2af598 100%);
 }
 
 .content {
@@ -78,7 +80,7 @@ body {
 }
 
 .hobby {
-	background: #FF2525;
+	background: #ff2525;
 }
 
 .focus:focus {
@@ -94,6 +96,23 @@ body {
 	color: pink;
 }
 
+.footer__paragraphFooter::before {
+	content: "";
+	display: inline-block;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	background: tomato;
+}
+
+.footer__paragraphFooter::after {
+	content: "HELLO";
+	display: block;
+	width: 100px;
+	height: 20px;
+	background: tomato;
+}
+
 .grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -102,7 +121,7 @@ body {
 }
 
 .klasa-z-js {
-	background-color: #FF2525;
+	background-color: #ff2525;
 	color: white;
 }
 
@@ -140,8 +159,8 @@ body {
 }
 
 .site-header {
-	background-color: #FFE53B;
-	background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+	background-color: #ffe53b;
+	background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
 	box-sizing: border-box;
 	left: 0;
 	padding: 10px;
@@ -162,8 +181,6 @@ body {
 		background: yellow;
 	}
 }
-
-
 
 .site-header:hover {
 	background: lightcoral;
@@ -212,5 +229,5 @@ body {
 	position: absolute;
 	right: 16px;
 	top: 16px;
-	font-size: 22px;;
+	font-size: 22px;
 }
