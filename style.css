@@ -41,16 +41,22 @@ body {
 	padding-left: 32px;
 }
 
-.day:first-child {
-	background: yellow;
+.day:hover {
+	background: red;
 }
 
-.day:last-child {
-	background: yellowgreen;
+.day:first-child {
+	background: yellow;
+	color: purple;
 }
+
 
 .day__dayHeader {
 	color: yellow;
+}
+
+.day__dayHeader:last-child {
+	color: green;
 }
 
 .day__dayHeader::before {
@@ -75,6 +81,9 @@ body {
 	color: blue;
 }
 
+.grid:last-child {
+	color: red;
+}
 .data-table {
 	width: 100%;
 }
@@ -84,7 +93,8 @@ body {
 }
 
 .focus:focus {
-	border: 3px solid red;
+	border:7px solid yellow;
+	background-color: pink;
 }
 
 .hobby__list {
@@ -152,6 +162,7 @@ body {
 
 .navigation__link:hover {
 	color: black;
+	background: #fff;
 }
 
 .title__diaryHeader {
